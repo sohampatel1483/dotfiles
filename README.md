@@ -1,6 +1,6 @@
 # Hyprland Dotfiles
 
-This repository contains my personal configuration files (dotfiles) for [Hyprland](https://hyprland.org/), a dynamic tiling Wayland compositor. It includes settings for essential components such as Waybar, Rofi, and more to create a clean and efficient workflow.
+This repository contains my personal dotfiles for Hyprland
 
 ![Screenshot](assets/screenshot1.png)
 ![Screenshot](assets/screenshot2.png)
