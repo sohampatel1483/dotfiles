@@ -1,0 +1,19 @@
+theme="/home/sohampatel/.cache/wal/colors-ghostty"
+window-decoration = false
+
+#theme=GitHub Dark
+#theme=3024 Day
+shell-integration = fish
+
+window-padding-x=10
+window-padding-y=10
+
+background-opacity=0.85
+
+adw-toolbar-style=flat
+keybind = ctrl+shift+left=goto_split:left
+keybind = ctrl+shift+down=goto_split:bottom
+keybind = ctrl+shift+up=goto_split:top
+keybind = ctrl+shift+right=goto_split:right
+keybind = ctrl+shift+r=new_split:right
+keybind = ctrl+shift+d=new_split:down
