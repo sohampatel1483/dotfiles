@@ -1,0 +1,8 @@
+#!/bin/sh
+export PATH="$HOME/.config/rofi/my_scripts:$PATH"
+if pgrep -x rofi; then
+  pkill -x rofi
+else
+  ~/.config/rofi/scripts/launcher_t1
+  # rofi -normal-window -show drun
+fi
