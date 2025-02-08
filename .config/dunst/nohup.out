@@ -1,0 +1,53 @@
+[2025-02-01 19:54:01.227] [info] Using configuration file /home/sohampatel/.config/waybar/config.jsonc
+[2025-02-01 19:54:01.232] [info] Discovered appearance 'dark'
+[2025-02-01 19:54:01.232] [info] Using CSS file /home/sohampatel/.config/waybar/style.css
+
+(waybar:125553): Gtk-WARNING **: 19:54:01.232: Theme parsing error: style.css:3:19: Not using units is deprecated. Assuming 'px'.
+[2025-02-01 19:54:01.242] [info] Hyprland IPC starting
+[2025-02-01 19:54:01.244] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-02-01 19:54:01.407] [info] Bar configured (width: 1440, height: 35) for output: eDP-1
+
+** (waybar:125553): WARNING **: 19:54:01.412: Status Notifier Item with bus name ':1.153' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+MESSAGE: Setting 'height' has changed behaviour after dunst 1.12.0, see https://dunst-project.org/release/#v1.12.0.
+MESSAGE: Legacy height support may be dropped in the future. If you want to hide this message transition to
+MESSAGE: 'height = (0, X)' for dynamic height (old behaviour equivalent) or to 'height = (X, X)' for a fixed height.
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+MESSAGE: Setting 'height' has changed behaviour after dunst 1.12.0, see https://dunst-project.org/release/#v1.12.0.
+MESSAGE: Legacy height support may be dropped in the future. If you want to hide this message transition to
+MESSAGE: 'height = (0, X)' for dynamic height (old behaviour equivalent) or to 'height = (X, X)' for a fixed height.
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+MESSAGE: Setting 'height' has changed behaviour after dunst 1.12.0, see https://dunst-project.org/release/#v1.12.0.
+MESSAGE: Legacy height support may be dropped in the future. If you want to hide this message transition to
+MESSAGE: 'height = (0, X)' for dynamic height (old behaviour equivalent) or to 'height = (X, X)' for a fixed height.
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+MESSAGE: Setting 'height' has changed behaviour after dunst 1.12.0, see https://dunst-project.org/release/#v1.12.0.
+MESSAGE: Legacy height support may be dropped in the future. If you want to hide this message transition to
+MESSAGE: 'height = (0, X)' for dynamic height (old behaviour equivalent) or to 'height = (X, X)' for a fixed height.
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+[2025-02-01 20:13:35.787] [info] Reloading...
+[2025-02-01 20:13:35.801] [info] Using configuration file /home/sohampatel/.config/waybar/config.jsonc
+[2025-02-01 20:13:35.802] [info] Using CSS file /home/sohampatel/.config/waybar/style.css
+[2025-02-01 20:13:35.804] [error] style.css:3:0expected semicolon
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
+WARNING: Icon 'nm-no-connection' not found in icon_path
+WARNING: Icon 'nm-signal-100' not found in icon_path
