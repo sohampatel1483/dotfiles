@@ -35,7 +35,7 @@ window {
     border-radius:               0px;
     border-color:                @selected;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            @background-op;
 }
 
 /*****----- Main Box -----*****/
@@ -86,7 +86,7 @@ message {
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @selected;
-    background-color:            @background-alt;
+    background-color:            @background-op;
     text-color:                  @foreground;
 }
 textbox {
@@ -131,7 +131,7 @@ element-text {
 
 element normal.normal,
 element alternate.normal {
-    background-color:            var(background);
+ // background-color:            var(background);
     text-color:                  var(foreground);
 }
 element normal.urgent,

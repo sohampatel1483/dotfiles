@@ -6,6 +6,6 @@ theme='style-6'
 if pgrep -x rofi; then
   pkill -x rofi
 else
-  cliphist list | rofi -dmenu -theme ${dir}/${theme}.rasi | cliphist decode | wl-copy
+  cliphist list | rofi -dmenu -theme ${dir}/${theme}.rasi -sorting-method fzf -sort -matching fuzzy| cliphist decode | wl-copy
   # rofi -normal-window -show drun
 fi

@@ -30,6 +30,8 @@
     "format-connected": " {device_alias}",
     "format-connected-battery": " {device_alias}",
     "format-off": "<b>󰂲</b>",
+    "format-disabled": "<b>󰂲</b>",
+    "on-click": "blueman-manager",
     // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
@@ -125,8 +127,8 @@
     "on-click-right": "killall rofi"
   },
   "custom/power": {
-    "format": " ",
-    "on-click": "wlogout"
+    "format": " ",
+    "on-click": "$HOME/.config/rofi/my_scripts/powermenu.sh"
   },
   "custom/wallpaper": {
     "format": " ",

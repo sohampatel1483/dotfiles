@@ -8,7 +8,7 @@ shell-integration = fish
 window-padding-x=10
 window-padding-y=10
 
-background-opacity=0.85
+background-opacity=0.7
 
 adw-toolbar-style=flat
 keybind = ctrl+shift+left=goto_split:left

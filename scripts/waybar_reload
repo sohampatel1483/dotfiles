@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Kill existing Waybar process
+pkill -SIGUSR2 waybar
+
+# Wait a moment to ensure it's stopped
+sleep 1
+
+# Restart Waybar with nohup
+nohup waybar > /dev/null 2>&1 

@@ -26,10 +26,10 @@ configuration {
 * {
     border-colour:               var(selected);
     handle-colour:               var(selected);
-    background-colour:           var(background);
+    background-colour:           var(background-op);
     foreground-colour:           var(foreground);
-    alternate-background:        var(background-alt);
-    normal-background:           var(background);
+    alternate-background:        var(background-op);
+    normal-background:           transparent;
     normal-foreground:           var(foreground);
     urgent-background:           var(urgent);
     urgent-foreground:           var(background);
@@ -41,7 +41,7 @@ configuration {
     selected-urgent-foreground:  var(background);
     selected-active-background:  var(urgent);
     selected-active-foreground:  var(background);
-    alternate-normal-background: var(background);
+    alternate-normal-background: transparent;
     alternate-normal-foreground: var(foreground);
     alternate-urgent-background: var(urgent);
     alternate-urgent-foreground: var(background);
@@ -64,8 +64,8 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               15px;
+    border:                      1px solid;
+    border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
     /* Backgroud Colors */
