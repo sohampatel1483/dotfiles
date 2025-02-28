@@ -26,7 +26,7 @@ for folder in "${FOLDERS[@]}"; do
     fi
 done
 
-SCRIPTS=("swww_change" "waybar_reload")
+SCRIPTS=("waybar_reload")
 SCRIPT_SRC_DIR="$HOME/.local/bin"
 SCRIPT_DEST_DIR="scripts"
 

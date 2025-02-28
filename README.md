@@ -26,8 +26,5 @@ Make sure to install the following dependencies before using these dotfiles:
 - Waybar and Rofi follow the selected colorscheme.
 - Fonts: **JetBrains Mono Nerd Font**
 
-## 🤝 Contributing
-Feel free to fork and modify these dotfiles to suit your needs. PRs are welcome!
-
-## 📝 License
-This project is licensed under the MIT License.
+## Notes
+- create symlink between hypr/scripts/swww_change to .local/bin (to use it from terminal)
