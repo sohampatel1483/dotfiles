@@ -6,7 +6,7 @@ selected_normal_background=$(sed -n 's/^ *selected-normal-background: *\(#\([0-9
 selected_active_background=$(sed -n 's/^ *selected-active-background: *\(#\([0-9a-fA-F]\{6\}\)\);.*$/\1/p' ~/.cache/wal/colors-rofi-dark.rasi)
 selected_urgent_background=$(sed -n 's/^ *selected-urgent-background: *\(#\([0-9a-fA-F]\{6\}\)\);.*$/\1/p' ~/.cache/wal/colors-rofi-dark.rasi)
 
-opacity="85"
+opacity="90"
 background_op="${background}${opacity}"
 # foreground="${foreground}"
 # selected_normal_background="${selected_normal_background}"

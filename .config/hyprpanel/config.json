@@ -1,0 +1,94 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "scalingPriority": "hyprland",
+  "theme.font.size": "0.9rem",
+  "tear": true,
+  "theme.font.name": "JetBrainsMono Nerd Font",
+  "theme.font.label": "JetBrainsMono Nerd Font",
+  "theme.font.style": "normal",
+  "theme.bar.floating": false,
+  "bar.launcher.icon": "",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.outer_spacing": "0.5em",
+  "wallpaper.pywal": true,
+  "wallpaper.enable": true,
+  "theme.bar.menus.opacity": 100,
+  "theme.bar.transparent": true,
+  "theme.matugen": false,
+  "wallpaper.image": "/home/sohampatel/Pictures/wallpaper/31.png",
+  "theme.bar.buttons.y_margins": "0.3em",
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "systray",
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "clock",
+        "notifications",
+        "power"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.menus.monochrome": false,
+  "theme.bar.menus.card_radius": "0.4em",
+  "theme.bar.menus.border.color": "#313244",
+  "theme.bar.buttons.style": "default",
+  "menus.clock.time.hideSeconds": true,
+  "menus.clock.weather.enabled": false,
+  "bar.media.show_active_only": true,
+  "theme.bar.menus.buttons.radius": "0.4em",
+  "theme.bar.menus.cards": "#1e1e2e",
+  "theme.bar.menus.border.radius": "0.7em",
+  "theme.matugen_settings.mode": "dark",
+  "theme.matugen_settings.scheme_type": "tonal-spot",
+  "theme.matugen_settings.variation": "standard_1",
+  "bar.network.truncation": false,
+  "theme.bar.buttons.network.enableBorder": false,
+  "bar.network.showWifiInfo": true,
+  "theme.bar.buttons.radius": "0.6em",
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.numbered_active_indicator": "highlight",
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "theme.bar.buttons.workspaces.enableBorder": false
+}
