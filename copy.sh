@@ -8,7 +8,7 @@ DEST_DIR=".config"
 mkdir -p "$DEST_DIR"
 
 # List of folders to copy
-FOLDERS=("alacritty" "dunst" "ghostty" "hypr" "nvim" "rofi" "wal" "waybar" "hyprpanel")
+FOLDERS=("alacritty" "dunst" "ghostty" "hypr" "nvim" "rofi" "wal" "waybar" "hyprpanel" "fish")
 
 # Loop through each folder
 for folder in "${FOLDERS[@]}"; do

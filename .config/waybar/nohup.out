@@ -1,0 +1,16 @@
+[2025-03-02 11:40:24.540] [info] Using configuration file /home/sohampatel/.config/waybar/config.jsonc
+[2025-03-02 11:40:24.544] [info] Discovered appearance 'dark'
+[2025-03-02 11:40:24.544] [info] Using CSS file /home/sohampatel/.config/waybar/style.css
+[2025-03-02 11:40:24.552] [info] Hyprland IPC starting
+[2025-03-02 11:40:24.552] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-02 11:40:24.706] [info] Bar configured (width: 1440, height: 31) for output: eDP-1
+[2025-03-02 11:40:28.311] [info] Reloading...
+[2025-03-02 11:40:28.316] [info] Using configuration file /home/sohampatel/.config/waybar/config.jsonc
+[2025-03-02 11:40:28.316] [info] Using CSS file /home/sohampatel/.config/waybar/style.css
+[2025-03-02 11:40:28.329] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-02 11:40:28.445] [info] Bar configured (width: 1440, height: 31) for output: eDP-1
+[2025-03-02 11:40:53.957] [info] Reloading...
+[2025-03-02 11:40:53.966] [info] Using configuration file /home/sohampatel/.config/waybar/config.jsonc
+[2025-03-02 11:40:53.966] [info] Using CSS file /home/sohampatel/.config/waybar/style.css
+[2025-03-02 11:40:53.979] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-03-02 11:40:54.102] [info] Bar configured (width: 1440, height: 31) for output: eDP-1

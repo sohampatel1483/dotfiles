@@ -3,20 +3,21 @@
 ## Applets : Power Menu
 
 # Import Current Theme
-source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="$type/$style"
+# source "$HOME"/.config/rofi/applets/shared/theme.bash
+# theme="$type/$style"
+theme="$HOME/.config/rofi/my_scripts/powermenu.rasi"
 
 # Theme Elements
 prompt="`hostname`"
 mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
 
-if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
+# if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
 	list_row='6'
-elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
-	list_col='6'
-	list_row='1'
-fi
+# elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
+	# list_col='6'
+	# list_row='1'
+# fi
 
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`

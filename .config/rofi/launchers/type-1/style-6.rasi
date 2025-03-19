@@ -11,10 +11,16 @@
 configuration {
 	modi:                       "drun,run,filebrowser,window";
     show-icons:                 true;
-    display-drun:               " Apps";
-    display-run:                " Run";
-    display-filebrowser:        " Files";
-    display-window:             " Windows";
+   // display-drun:               " Apps";
+   // display-run:                " Run";
+   // display-filebrowser:        " Files";
+   // display-window:             " Windows";
+
+    display-drun:               " ";
+    display-run:                " ";
+    display-filebrowser:        " ";
+    display-window:             " ";
+
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
@@ -56,7 +62,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       700px;
+    width:                       450px;
     x-offset:                    0px;
     y-offset:                    0px;
 

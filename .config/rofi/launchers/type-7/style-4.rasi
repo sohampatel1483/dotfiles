@@ -1,5 +1,6 @@
 
 @import "~/.config/rofi/colors/pywal"
+@import "~/.cache/wal/colors-rofi"
 
 /*****----- Configuration -----*****/
 configuration {
@@ -15,14 +16,19 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
-    background:                  #2D1B14;
-    background-alt:              #462D23;
-    foreground:                  #FFFFFF;
-    selected:                    #E25F3E;
-    active:                      #7B6C5B;
-    urgent:                      #934A1C;
+    // background:                  #2D1B14;
+    // background-alt:              #462D23;
+    // foreground:                  #FFFFFF;
+    // selected:                    #E25F3E;
+    // active:                      #7B6C5B;
+    // urgent:                      #934A1C;
+
 
     border-colour:               var(selected);
+    text-colour:                 var(foreground);
+    selected-text-colour:          var(background);
+    background-transparent :    var(background-op);
+    // background:                  var(background-op);
 }
 
 /*****----- Main Window -----*****/
@@ -41,11 +47,11 @@ window {
     /* properties for all widgets */
     enabled:                     true;
     // border-radius:               0px;
-    border :                     0px solid;
-    // border-radius:               10px;
+    border :                     1px solid;
+    border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            @background-transparent;
 }
 
 /*****----- Main Box -----*****/
@@ -69,7 +75,7 @@ listbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    padding:                     40px 40px 40px;
+    padding:                     40px 30px 40px;
     background-color:            transparent;
     background-image:            url("~/.current_wallpaper", width);
     text-color:                  @foreground;
@@ -118,7 +124,7 @@ button {
 }
 button selected {
     background-color:            @selected;
-    text-color:                  @foreground;
+    text-color:                  @selected-text-colour;
 }
 
 /*****----- Listview -----*****/
@@ -164,15 +170,15 @@ element normal.active {
 }
 element selected.normal {
     background-color:            @selected;
-    text-color:                  @foreground;
+    text-color:                  @selected-text-colour;
 }
 element selected.urgent {
     background-color:            @urgent;
-    text-color:                  @foreground;
+    text-color:                  @selected-text-colour;
 }
 element selected.active {
     background-color:            @urgent;
-    text-color:                  @foreground;
+    text-color:                  @selected-text-colour;
 }
 element-icon {
     background-color:            transparent;

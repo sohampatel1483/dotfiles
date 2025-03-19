@@ -8,14 +8,13 @@
     "backlight",
     "pulseaudio",
     "battery",
-    "power-profiles-daemon",
-    "custom/power"
+    "power-profiles-daemon"
   ],
   "network#speed": {
     "interval": 1,
     "format": "{ifname}",
-    "format-wifi": " {bandwidthDownBytes}",
-    "format-ethernet": " {bandwidthDownBytes}",
+    "format-wifi": "  {bandwidthDownBytes}",
+    "format-ethernet": "  {bandwidthDownBytes}",
     "format-disconnected": "󰌙",
     "tooltip-format": "{ipaddr}",
     "format-linked": "󰈁 {ifname} (No IP)",
@@ -39,7 +38,7 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   },
   "network": {
-    "format-wifi": "{icon} {essid}",
+    "format-wifi": "{icon}  {essid}",
     "format-ethernet": "󰈀",
     "tooltip": false,
     "on-click": "nm-applet --indicator",
@@ -50,8 +49,8 @@
   "pulseaudio": {
     "tooltip": false,
     "scroll-step": 1,
-    "format": "{icon} {volume}%",
-    "format-muted": "婢 {volume}%",
+    "format": "{icon}  {volume}%",
+    "format-muted": "  {volume}%",
     "format-bluetooth-muted": "<b>󰗿</b>",
     "format-bluetooth": "<b>󰗾 {volume}</b>",
     "on-click": "pavucontrol",
@@ -94,13 +93,14 @@
     "spacing": 10
   },
   "clock": {
-    "format": " {:%I:%M %p}",
-    "format-alt": " {:%a, %d. %b  %I:%M %p}"
+    "format": "  {:%I:%M %p}",
+    "format-alt": "  {:%a, %d. %b  %I:%M %p}",
+    "tooltip": false
   },
 
   "cpu": {
     "interval": 15,
-    "format": " {}%",
+    "format": "  {}%",
     "max-length": 10
   },
   "memory": {

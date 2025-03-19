@@ -5,7 +5,7 @@
   border: none;
   border-radius: 8px;
   font-family: "JetbrainsMono Nerd Font";
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   min-height: 8px;
 }
@@ -19,9 +19,9 @@ window#waybar.hidden {
 }
 
 #window {
-  margin-top: 10px;
+  margin-top: 400px;
   padding-left: 10px;
-  padding-right: 100px;
+  padding-right: 10px;
   border-radius: 10px;
   transition: none;
   color: transparent;
@@ -30,22 +30,43 @@ window#waybar.hidden {
 
 /* left */
 #clock {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
   color: #abe9b3;
   background: @card_bg;
 }
 
 #cpu {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  padding-right: 10px;
   transition: none;
   color: #96cdfb;
   background: @card_bg;
 }
 #network.speed {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
   color: @lavender;
   background: @card_bg;
 }
 #tray {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  padding-right: 10px;
   transition: none;
   color: #b5e8e0;
   background: @card_bg;
@@ -54,6 +75,8 @@ window#waybar.hidden {
 /* center */
 
 #workspaces {
+  margin-top: 6px;
+  margin-left: 12px;
   font-size: 4px;
   margin-bottom: 0px;
   background: @card_bg;
@@ -85,16 +108,16 @@ window#waybar.hidden {
   border-top: 2px solid #abe9b3;
   border-bottom: 2px solid #abe9b3;
   border-left: 2px solid #abe9b3;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 #workspaces button.active:last-child {
   color: #abe9b3;
   border-top: 2px solid #abe9b3;
   border-bottom: 2px solid #abe9b3;
   border-right: 2px solid #abe9b3;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #workspaces button:hover {
@@ -112,6 +135,11 @@ window#waybar.hidden {
 
 /* right */
 #network {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
 
   color: #bd93f9;
@@ -119,24 +147,44 @@ window#waybar.hidden {
 }
 
 #bluetooth {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
   color: @rosewater;
   background: @card_bg;
 }
 
 #backlight {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
   color: #f8bd96;
   background: @card_bg;
 }
 
 #pulseaudio {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
   color: #fae3b0;
   background: @card_bg;
 }
 
 #battery {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
   transition: none;
   color: #b5e8e0;
   background: @card_bg;
@@ -154,6 +202,12 @@ window#waybar.hidden {
 }
 
 #power-profiles-daemon {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  margin-right: 0px;
   transition: none;
   color: @red;
   background: @card_bg;
@@ -200,10 +254,4 @@ window#waybar.hidden {
 #custom-power {
   padding: 2px 10px;
   margin-left: 6px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-#workspaces {
-  margin-top: 0px;
 }
