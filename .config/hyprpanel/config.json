@@ -99,7 +99,7 @@
   "menus.dashboard.powermenu.avatar.image": "/home/sohampatel/.current_wallpaper",
   "theme.osd.location": "bottom",
   "theme.osd.orientation": "horizontal",
-  "theme.bar.location": "top",
+  "theme.bar.location": "bottom",
   "menus.transition": "crossfade",
   "menus.transitionTime": 10,
   "theme.bar.buttons.bluetooth.enableBorder": false,
@@ -116,5 +116,6 @@
     ]
   ],
   "bar.windowtitle.custom_title": true,
-  "bar.windowtitle.truncation_size": 25
+  "bar.windowtitle.truncation_size": 25,
+  "notifications.position": "bottom right"
 }
