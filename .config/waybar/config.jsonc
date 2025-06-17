@@ -1,137 +1,138 @@
+// -*- mode: jsonc -*-
 {
-  "layer": "top",
-  "modules-left": ["clock", "cpu", "network#speed", "custom/media", "tray"],
-  "modules-center": ["hyprland/workspaces"],
+  //"layer": "top", // Waybar at top layer
+  "height": 40,
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
-    "network",
-    "bluetooth",
-    "backlight",
-    "pulseaudio",
-    "battery",
-    "power-profiles-daemon"
+    "tray",
+    "group/hw",
+    "group/control",
+    "clock",
+    "custom/notification",
   ],
-  "network#speed": {
-    "interval": 1,
-    "format": "{ifname}",
-    "format-wifi": "  {bandwidthDownBytes}",
-    "format-ethernet": "  {bandwidthDownBytes}",
-    "format-disconnected": "󰌙",
-    "tooltip-format": "{ipaddr}",
-    "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} 󰌘",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 30,
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
-  },
-  "bluetooth": {
-    "format": " {status}",
-    "format-connected": " {device_alias}",
-    "format-connected-battery": " {device_alias}",
-    "format-off": "<b>󰂲</b>",
-    "format-disabled": "<b>󰂲</b>",
-    "on-click": "blueman-manager",
-    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-  },
-  "network": {
-    "format-wifi": "{icon}  {essid}",
-    "format-ethernet": "󰈀",
-    "tooltip": false,
-    "on-click": "nm-applet --indicator",
-    "format-disconnected": "<b>󰈂</b>",
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
-  },
-
-  "pulseaudio": {
-    "tooltip": false,
-    "scroll-step": 1,
-    "format": "{icon}  {volume}%",
-    "format-muted": "  {volume}%",
-    "format-bluetooth-muted": "<b>󰗿</b>",
-    "format-bluetooth": "<b>󰗾 {volume}</b>",
-    "on-click": "pavucontrol",
-    "format-icons": {
-      "default": ["", "", ""]
-    }
-  },
-  "power-profiles-daemon": {
+  "hyprland/workspaces": {
+    "on-click": "activate",
     "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
     "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
-  },
-  "backlight": {
-    "tooltip": false,
-    "format": " {}%",
-    "interval": 1,
-    "on-scroll-up": "light -A 1",
-    "on-scroll-down": "light -U 1"
-  },
-  "battery": {
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 20
+      "1": "<b>1</b>",
+      "2": "<b>2</b>",
+      "3": "<b>3</b>",
+      "4": "<b>4</b>",
+      "5": "<b>5</b>",
+      "6": "<b>6</b>",
+      "7": "<b>7</b>",
+      "8": "<b>8</b>",
+      "9": "<b>9</b>",
     },
-    "format": "{icon}  {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
   },
+  "hyprland/window": {},
   "tray": {
-    "icon-size": 18,
-    "spacing": 10
+    "icon-size": 17,
+    "spacing": 8,
   },
-  "clock": {
-    "format": "  {:%I:%M %p}",
-    "format-alt": "  {:%a, %d. %b  %I:%M %p}",
-    "tooltip": false
+  "group/hw": {
+    "orientation": "horizontal",
+    "modules": ["cpu", "memory", "temperature"],
   },
-
   "cpu": {
-    "interval": 15,
-    "format": "  {}%",
-    "max-length": 10
+    "format": "<span color='#b2ccd6'>󰍛</span> {usage}%",
+    "interval": 2,
+    "on-click": "kitty btop",
   },
   "memory": {
-    "interval": 30,
-    "format": " {}%",
-    "max-length": 10
+    "format": "<span color='#c792ea'>󰘚</span> {used:.2g}GB",
+    "interval": 2,
+    "on-click": "kitty btop",
   },
-  "custom/media": {
-    "interval": 30,
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 20,
+  "group/control": {
+    "orientation": "horizontal",
+    "modules": ["battery", "network", "bluetooth", "pulseaudio", "backlight"],
+  },
+  "battery": {
+    // "states": {
+    // "good": 95,
+    //  "warning": 30,
+    // "critical": 15,
+    // },
+    "format": "<span color='#c3e88d'>{icon}</span> {capacity}%",
+    "format-charging": "<span color='#c3e88d'>󱐋</span> {capacity}%",
+    "format-plugged": "<span color='#c3e88d'></span> {capacity}%",
+    "tooltip-format": "{time} left",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"],
+  },
+  "network": {
+    "format-ethernet": "<span color='#89ddff'>󰈀</span> {bandwidthDownBytes:=}",
+    "format-wifi": "<span color='#89ddff'>{icon}</span> {bandwidthDownBytes:=}",
+    "format-disconnected": "<span color='#89ddff'>󰤭</span> {bandwidthDownBytes:=}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "interval": 2,
+    "tooltip-format": "{essid}",
+    "on-click": "nm-applet",
+  },
+  "bluetooth": {
+    "format": "<span color='#82aaff'></span> {status}",
+    "format-connected-battery": "<span color='#82aaff'></span> {device_battery_percentage}%",
+    "tooltip-format": "{device_alias} {status}",
+    "on-click": "blueman-manager",
+  },
+  "pulseaudio": {
+    "format": "<span color='#f78c6c'>{icon}</span> {volume}%",
+    "format-muted": "<span color='#f78c6c'>󰖁</span> {volume}%",
+    "format-bluetooth": "<span color='#f78c6c'>{icon}</span> {volume}%",
+    "format-bluetooth-muted": "<span color='#f78c6c'>󰖁</span> {volume}%",
     "format-icons": {
-      "spotify": " ",
-      "default": " "
+      "headphone": "󰋋",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "default": ["󰕿", "󰖀", "󰕾"],
     },
+    "on-click": "pavucontrol",
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "<span color='#ffcb6b'>☀</span> {percent}%",
+    "tooltip": false,
+  },
+  "hyprland/language": {
+    "format": "<span color='#c792ea'></span> {shortDescription} ",
+    "keyboard-name": "at-translated-set-2-keyboard",
+    "min-length": 5,
+  },
+  "clock": {
+    "timezone": "Asia/Kolkata",
+    "format": "<span color='#ffcb6b'>󰥔</span> {:%a %b %d %R %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": [
+      "<span color='#ffcb6b'></span>",
+      "<span color='#ffcb6b'></span>",
+      "<span color='#ffcb6b'></span>",
+    ],
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "rotate": 0,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󰅸",
+      "none": "󰂜",
+      "dnd-notification": "󰅸",
+      "dnd-none": "󱏨",
+      "inhibited-notification": "󰅸",
+      "inhibited-none": "󰂜",
+      "dnd-inhibited-notification": "󰅸",
+      "dnd-inhibited-none": "󱏨",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click-right": "swaync-client -d -sw",
+    "on-click": "swaync-client -t -sw",
     "escape": true,
-    "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-    "on-click": "playerctl play-pause"
+    "margin-left": 10,
+    "margin-right": 5,
   },
-  "custom/launcher": {
-    "format": " ",
-    "on-click": "rofi -show drun",
-    "on-click-right": "killall rofi"
-  },
-  "custom/power": {
-    "format": " ",
-    "on-click": "$HOME/.config/rofi/my_scripts/powermenu.sh"
-  },
-  "custom/wallpaper": {
-    "format": " ",
-    "on-click": "bash ~/.config/system_scripts/pkill_bc"
-  }
 }

@@ -2,7 +2,7 @@
   "bar.customModules.updates.pollingInterval": 1440000,
   "scalingPriority": "hyprland",
   "theme.font.size": "0.9rem",
-  "tear": true,
+  "tear": false,
   "theme.font.name": "JetBrainsMono Nerd Font",
   "theme.font.label": "JetBrainsMono Nerd Font",
   "theme.font.style": "normal",
@@ -117,5 +117,14 @@
   ],
   "bar.windowtitle.custom_title": true,
   "bar.windowtitle.truncation_size": 25,
-  "notifications.position": "bottom right"
+  "notifications.position": "bottom right",
+  "theme.bar.background": "#11111b",
+  "theme.bar.buttons.background": "#242438",
+  "theme.bar.buttons.network.background": "#242438",
+  "theme.bar.buttons.monochrome": false,
+  "theme.bar.buttons.icon_background": "#242438",
+  "bar.customModules.netstat.dynamicIcon": true,
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "bar.customModules.netstat.labelType": "in",
+  "bar.customModules.netstat.label": true
 }
