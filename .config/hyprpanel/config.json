@@ -30,6 +30,7 @@
       ],
       "right": [
         "systray",
+        "hyprsunset",
         "volume",
         "network",
         "bluetooth",
@@ -128,7 +129,7 @@
   "bar.customModules.netstat.labelType": "in",
   "bar.customModules.netstat.label": true,
   "theme.bar.buttons.opacity": 100,
-  "theme.bar.buttons.background_opacity": 40,
+  "theme.bar.buttons.background_opacity": 90,
   "bar.volume.label": true,
   "theme.bar.buttons.volume.enableBorder": false,
   "theme.bar.buttons.clock.enableBorder": true,
@@ -136,5 +137,9 @@
   "bar.workspaces.showApplicationIcons": false,
   "theme.bar.buttons.windowtitle.enableBorder": false,
   "bar.customModules.netstat.icon": "󰖟",
-  "bar.customModules.netstat.round": true
+  "bar.customModules.netstat.round": true,
+  "theme.bar.buttons.windowtitle.background": "#242438",
+  "menus.volume.raiseMaximumVolume": false,
+  "bar.customModules.hyprsunset.label": false,
+  "bar.customModules.hyprsunset.temperature": "5000k"
 }

@@ -13,7 +13,7 @@ size = 12  # Adjust size as needed
 
 [window]
 padding = { x = 10, y = 10 }  # Adjust padding as needed
-opacity = 0.75  # Transparency (0.0 = fully transparent, 1.0 = fully opaque)
+opacity = 0.70  # Transparency (0.0 = fully transparent, 1.0 = fully opaque)
 blur = true  # Enable background blur (Requires compositor like picom)
 
 [colors]
