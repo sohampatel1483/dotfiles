@@ -126,7 +126,7 @@
   "theme.bar.buttons.icon_background": "#242438",
   "bar.customModules.netstat.dynamicIcon": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
-  "bar.customModules.netstat.labelType": "in",
+  "bar.customModules.netstat.labelType": "out",
   "bar.customModules.netstat.label": true,
   "theme.bar.buttons.opacity": 100,
   "theme.bar.buttons.background_opacity": 90,

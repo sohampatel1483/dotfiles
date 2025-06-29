@@ -1,0 +1,17 @@
+#!/bin/bash
+
+WALL_DIR="$HOME/Pictures/wallpaper"
+dir="$HOME/.config/rofi/launchers/type-2"
+theme='style-7'
+
+CWD="$(pwd)"
+
+cd "$WALL_DIR"
+
+IFS=$'\n'
+
+SELECTED_WALL=$(for a in *.jpg *.png; do echo -en "$a\0icon\x1f$a\n"; done | rofi -dmenu -theme ${dir}/${theme}.rasi -p "")
+
+if [ -n "$SELECTED_WALL" ]; then
+  ${HOME}/.local/bin/swww_change "$WALL_DIR/$SELECTED_WALL"
+fi

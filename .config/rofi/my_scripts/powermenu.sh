@@ -92,7 +92,8 @@ run_cmd() {
 	elif [[ "$1" == '--opt2' ]]; then
 		loginctl terminate-user $USER
 	elif [[ "$1" == '--opt3' ]]; then
-		systemctl suspend
+		# systemctl suspend
+		(sleep 0.5; systemctl suspend) & loginctl lock-session
 	elif [[ "$1" == '--opt4' ]]; then
 		confirm_run 'systemctl hibernate'
 	elif [[ "$1" == '--opt5' ]]; then

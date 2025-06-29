@@ -1,0 +1,32 @@
+#!/bin/sh
+
+WAL_PATH="${HOME}/.local/bin/wal"
+ROFI_WAL_PATH="${HOME}/.config/rofi/scripts/pywal.sh"
+
+set_wallpaper_hyprland() {
+  echo $PATH
+  dir="${HOME}/Pictures/wallpaper"
+  input_path="$1"
+  PROGRAM="swww-daemon"
+  transition_type="center"
+
+  if [ -n "$input_path" ] && [ -f "$input_path" ]; then
+    BG="$input_path"
+  else
+    BG="$(find "$dir" -name '*.jpg' -o -name '*.png' | shuf -n1)"
+  fi
+
+  if pgrep "$PROGRAM" >/dev/null; then
+    swww img "$BG" --transition-fps 244 --transition-type $transition_type --transition-duration 1
+  else
+    swww-daemon && swww img "$BG" --transition-fps 244 --transition-type $transition_type --transition-duration 1
+  fi
+
+  sleep 1
+  $WAL_PATH -n --cols16 lighten --contrast 4 -i "$BG"
+  $ROFI_WAL_PATH
+  ln -sf "$BG" "$HOME/.current_wallpaper"
+
+}
+
+set_wallpaper_hyprland "$1"
