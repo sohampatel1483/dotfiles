@@ -8,7 +8,7 @@ DEST_DIR=".config"
 mkdir -p "$DEST_DIR"
 
 # List of folders to copy
-FOLDERS=("alacritty" "dunst" "ghostty" "hypr" "nvim" "rofi" "wal" "waybar" "hyprpanel" "fish" "systemd" "mpv")
+FOLDERS=("alacritty" "dunst" "ghostty" "hypr" "nvim" "rofi" "wal" "waybar" "hyprpanel" "fish" "systemd" "mpv" "btop")
 
 # Loop through each folder
 for folder in "${FOLDERS[@]}"; do
@@ -26,7 +26,7 @@ for folder in "${FOLDERS[@]}"; do
   fi
 done
 
-SCRIPTS=("waybar_reload" "swww_change" "wall_select")
+SCRIPTS=("waybar_reload" "swww_change" "wall_select" "toggle_wifi")
 SCRIPT_SRC_DIR="$HOME/.local/bin"
 SCRIPT_DEST_DIR="scripts"
 

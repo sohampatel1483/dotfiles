@@ -141,5 +141,6 @@
   "theme.bar.buttons.windowtitle.background": "#242438",
   "menus.volume.raiseMaximumVolume": false,
   "bar.customModules.hyprsunset.label": false,
-  "bar.customModules.hyprsunset.temperature": "5000k"
+  "bar.customModules.hyprsunset.temperature": "5000k",
+  "bar.network.rightClick": "~/.local/bin/toggle_wifi"
 }
