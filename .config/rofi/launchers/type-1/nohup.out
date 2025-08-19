@@ -1,0 +1,21 @@
+
+(gjs:76343): Gjs-Console-CRITICAL **: 18:59:10.599: Failed to start swww-daemon: Gio.IOErrorEnum: Error: "There is an swww-daemon instance already running on this socket!"
+execAsync/</<@file:///usr/share/hyprpanel/hyprpanel.js:132:34
+  
+
+(gjs:76343): Gjs-CRITICAL **: 19:06:45.072: JS ERROR: Gio.IOErrorEnum: GDBus.Error:org.bluez.Error.NotReady: Resource Not Ready
+onClick@file:///usr/share/hyprpanel/hyprpanel.js:12190:49
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:263:34
+
+
+(gjs:76343): Gjs-CRITICAL **: 19:06:46.454: JS ERROR: Gio.IOErrorEnum: GDBus.Error:org.bluez.Error.NotReady: Resource Not Ready
+onClick@file:///usr/share/hyprpanel/hyprpanel.js:12190:49
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:263:34
+
+
+(gjs:76343): Gjs-CRITICAL **: 19:06:47.672: JS ERROR: Gio.IOErrorEnum: GDBus.Error:org.bluez.Error.NotReady: Resource Not Ready
+onClick@file:///usr/share/hyprpanel/hyprpanel.js:12190:49
+_init/GLib.MainLoop.prototype.runAsync/</<@resource:///org/gnome/gjs/modules/core/overrides/GLib.js:263:34
+
+
+** (gjs:76343): WARNING **: 19:06:57.350: icon.vala:21: g-icon is deprecated. Use gicon instead.
