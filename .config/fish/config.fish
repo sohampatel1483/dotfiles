@@ -5,5 +5,6 @@ end
 #starship init fish | source
 set -g fish_greeting
 
-fzf --fish | source
 # alias ls='lsd'
+
+# fish_config theme choose Matugen

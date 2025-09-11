@@ -25,6 +25,7 @@ set_wallpaper_hyprland() {
   sleep 1
   $WAL_PATH -n --cols16 lighten --contrast 4 -i "$BG"
   $ROFI_WAL_PATH
+  # matugen image "$BG"
   ln -sf "$BG" "$HOME/.current_wallpaper"
 
 }
