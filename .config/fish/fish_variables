@@ -41,4 +41,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/sohampatel/go/bin\x1e/home/sohampatel/\x2ecargo/bin\x1e/home/sohampatel/\x2elocal/bin\x1e/home/sohampatel/\x2envm/versions/node/v20\x2e18\x2e1/bin\x1e/usr/local/bin
+SETUVAR fish_user_paths:/home/sohampatel/go/bin\x1e/home/sohampatel/\x2ecargo/bin\x1e/home/sohampatel/\x2elocal/bin\x1e/home/sohampatel/\x2envm/versions/node/v20\x2e18\x2e1/bin\x1e/usr/local/bin\x1e/usr/bin

@@ -6,7 +6,7 @@
   "theme.font.name": "JetBrainsMono Nerd Font Propo",
   "theme.font.label": "JetBrainsMono Nerd Font Propo",
   "theme.font.style": "normal",
-  "theme.bar.floating": false,
+  "theme.bar.floating": true,
   "bar.launcher.icon": "",
   "theme.bar.buttons.enableBorders": false,
   "theme.bar.outer_spacing": "0.5em",
@@ -16,7 +16,7 @@
   "theme.bar.transparent": true,
   "theme.matugen": false,
   "wallpaper.image": "/home/sohampatel/.current_wallpaper",
-  "theme.bar.buttons.y_margins": "0.4em",
+  "theme.bar.buttons.y_margins": "0em",
   "bar.layouts": {
     "0": {
       "left": [
@@ -150,5 +150,11 @@
   "bar.customModules.storage.paths": [
     "/"
   ],
-  "bar.autoHide": "never"
+  "bar.autoHide": "never",
+  "theme.bar.margin_top": "0em",
+  "theme.bar.enableShadow": false,
+  "theme.bar.margin_sides": "0em",
+  "theme.bar.margin_bottom": "0.4em",
+  "bar.notifications.show_total": false,
+  "bar.notifications.hideCountWhenZero": false
 }
