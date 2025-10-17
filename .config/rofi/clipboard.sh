@@ -1,6 +1,7 @@
 #!/bin/sh
 
-theme='common.rasi'
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+theme="$SCRIPT_DIR/common.rasi"
 
 if pgrep -x rofi; then
   pkill -x rofi

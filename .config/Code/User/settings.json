@@ -1,0 +1,289 @@
+{
+    // "code-runner.terminalRoot": "/",
+    "[dart]": {
+        "editor.formatOnSave": true
+    },
+    "editor.mouseWheelZoom": false,
+    "code-runner.runInTerminal": true,
+    "extensions.ignoreRecommendations": true,
+    "window.openFilesInNewWindow": "on",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font','Iosevka Nerd Font','monospace'",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.git": false,
+        "**/.project": true,
+        "**/.settings": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "cph.general.defaultLanguage": "cpp",
+    "cph.general.retainWebviewContext": true,
+    // "workbench.experimental.layoutControl.enabled": true,
+    "explorer.confirmDelete": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "codesnap.shutterAction": "copy",
+    "leetcode.endpoint": "leetcode",
+    "codesnap.showWindowControls": false,
+    "codesnap.transparentBackground": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.commandCenter": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    // "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    // "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    // "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    // "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "editor.detectIndentation": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "oneDarkPro.italic": false,
+    "oneDarkPro.vivid": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.smoothScrolling": true,
+    "notebook.output.textLineLimit": 50,
+    "background.editor": {
+        "images": [
+            "https://user-images.githubusercontent.com/9987486/40583669-d6189844-61c5-11e8-89e3-c52ad153da09.png",
+            "https://user-images.githubusercontent.com/9987486/40583670-d6478c9e-61c5-11e8-9551-6b55eacc7b8d.png",
+            "https://user-images.githubusercontent.com/9987486/40583671-d676c6e4-61c5-11e8-94cb-34ec4a12fa01.png"
+        ],
+        "style": {
+            "content": "''",
+            "pointer-events": "none",
+            "position": "absolute",
+            "z-index": "99999",
+            "width": "100%",
+            "height": "100%",
+            "background-size": "100px",
+            "background-position": "100% 100%",
+            "background-repeat": "no-repeat",
+            "opacity": 0.3
+        },
+        "fullscreen": {
+            "image": "",
+            "opacity": 0.91,
+            "size": "cover",
+            "interval": 0
+        }
+    },
+    "background.loop": true,
+    "warmUp.changeCount": "15",
+    "warmUp.switchProgrammingLanguage": "cpp",
+    "editor.accessibilitySupport": "off",
+    "svelte.enable-ts-plugin": true,
+    "svelte.plugin.svelte.note-new-transformation": false,
+    "css.lint.unknownAtRules": "ignore",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "*.html": "html",
+        "*.svg": "image"
+    },
+    //vim settings
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-d>": false,
+        "<C-l>": false,
+        "<C-r>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "q",
+                "q"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "svelte.plugin.svelte.format.config.svelteBracketNewLine": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "redhat.telemetry.enabled": true,
+    "rsp-ui.enableStartServerOnActivation": [
+        {
+            "id": "redhat.vscode-community-server-connector",
+            "name": "Community Server Connector",
+            "startOnActivation": true
+        }
+    ],
+    "tailwindCSS.experimental.configFile": null,
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.env.windows": {},
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.enableDebugLogs": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "prettier.useEditorConfig": false,
+    "explorer.confirmPasteNative": false,
+    "prisma.showPrismaDataPlatformNotification": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[shellscript]": {
+        "editor.defaultFormatter": "shakram02.bash-beautify"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "supermaven.enable": {
+        "*": true
+    },
+    "remote.SSH.useExecServer": false,
+    "remote.SSH.remotePlatform": {
+        "mars.cse.iitb.ac.in": "linux"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "react-native-tools.showUserTips": false,
+    "livePreview.openPreviewTarget": "External Browser",
+    "emmet.triggerExpansionOnTab": true,
+    "background.enabled": false,
+    "supermaven.enableFixWithSupermaven": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "codeforces-notify.handle": "sohampatel148e",
+    "window.titleBarStyle": "custom",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "phase",
+    "terminal.integrated.gpuAcceleration": "off",
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "excalidraw.theme": "light",
+    "svg.preview.boundingBox": true,
+    "svg.preview.autoOpen": true,
+    "workbench.editorAssociations": {
+        "*.svg": "svgPreviewer.customEditor"
+    },
+    "svg.preview.transparencyGrid": false,
+    "go.toolsManagement.autoUpdate": true,
+    "[solidity]": {
+        "editor.defaultFormatter": "JuanBlanco.solidity"
+    },
+    "tailwindCSS.includeLanguages": {
+        "html": "html"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": true,
+        "repositories": true,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
+    "workbench.sideBar.location": "right",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "vim.useSystemClipboard": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "clangd.path": "/home/sohampatel/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/20.1.8/clangd_20.1.8/bin/clangd",
+    "explorer.compactFolders": false,
+    "[proto3]": {
+        "editor.defaultFormatter": "zxh404.vscode-proto3"
+    },
+    "latex-workshop.docker.image.latex": "texlive/texlive",
+    "latex-workshop.formatting.latex": "tex-fmt",
+    "latex-workshop.docker.enabled": true,
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "latex-workshop.formatting.tex-fmt.path": "/home/sohampatel/.cargo/bin/tex-fmt"
+    //end vim settings
+}
