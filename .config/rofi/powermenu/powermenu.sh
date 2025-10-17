@@ -5,7 +5,9 @@
 # Import Current Theme
 # source "$HOME"/.config/rofi/applets/shared/theme.bash
 # theme="$type/$style"
-theme="powermenu.rasi"
+
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+theme="$SCRIPT_DIR/powermenu.rasi"
 
 # Theme Elements
 prompt="$(hostname)"

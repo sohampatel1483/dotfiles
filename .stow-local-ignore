@@ -2,4 +2,4 @@
 ^\.git
 ^README\.md$
 ^docs/
-\.bak$
+.*\.bak$
