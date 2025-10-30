@@ -81,7 +81,7 @@
   "theme.bar.menus.border.radius": "0.7em",
   "theme.matugen_settings.mode": "dark",
   "theme.matugen_settings.scheme_type": "tonal-spot",
-  "theme.matugen_settings.variation": "standard_2",
+  "theme.matugen_settings.variation": "standard_1",
   "bar.network.truncation": false,
   "theme.bar.buttons.network.enableBorder": false,
   "bar.network.showWifiInfo": true,
