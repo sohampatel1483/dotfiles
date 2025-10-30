@@ -226,7 +226,6 @@
     "codeforces-notify.handle": "sohampatel148e",
     "window.titleBarStyle": "custom",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "GitHub Dark",
     "workbench.iconTheme": "material-icon-theme",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorBlinking": "phase",
@@ -266,10 +265,12 @@
     },
     "workbench.sideBar.location": "right",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": true,
         "markdown": false,
-        "scminput": false
+        "scminput": false,
+        "python": false,
+        "cpp": false
     },
     "vim.useSystemClipboard": true,
     "github.copilot.nextEditSuggestions.enabled": false,
@@ -284,6 +285,7 @@
     "[latex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
-    "latex-workshop.formatting.tex-fmt.path": "/home/sohampatel/.cargo/bin/tex-fmt"
+    "latex-workshop.formatting.tex-fmt.path": "/home/sohampatel/.cargo/bin/tex-fmt",
+    "workbench.colorTheme": "GitHub Dark"
     //end vim settings
 }
