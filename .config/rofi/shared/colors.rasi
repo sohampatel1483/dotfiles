@@ -1,1 +1,13 @@
-@import "../colors/pywal.rasi"
+/*
+ * Matugen-generated colors for Rofi
+ * (Based on your pywal script)
+ */
+* {
+    background:     #1a1110;
+    background-alt: #1a1110;
+    background-op:  #1a111099;
+    foreground:     #f1dfdb;
+    selected:       #ffb4a8;
+    active:         #e7bdb6;
+    urgent:         #ffb4ab;
+}

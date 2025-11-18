@@ -1,0 +1,137 @@
+@import "./colors.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  min-height: 0px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @on_surface_variant;
+}
+
+/* #workspaces,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#disk,
+#tray,
+#mpris,
+#custom-weather {
+  margin: 0;
+} */
+/* -----------------------------------------------------------------------------
+* Group Clock
+* -------------------------------------------------------------------------- */
+/* #date_time {
+  border-radius: 8px;
+  background: @surface_container;
+  border: 1px solid @outline_variant;
+  padding: 3px 10px;
+} */
+
+#date_time {
+  background: @surface_container;
+  border: 1px solid @outline_variant;
+}
+#date_time > *:not(:last-child) {
+  border-right: 1px solid @outline_variant;
+}
+
+#clock.time {
+  padding: 3px 10px;
+}
+#clock.date {
+  padding: 3px 10px;
+}
+
+#tray {
+  /* background: @surface_container; */
+  /* border: 1px solid @outline_variant; */
+  padding: 0px 5px;
+}
+/* -----------------------------------------------------------------------------
+* Group Workspaces
+* -------------------------------------------------------------------------- */
+
+#workspaces {
+  padding: 0 3px;
+  background: @surface_container_low;
+  border-radius: 8px;
+}
+
+#workspaces button {
+  color: @on_surface;
+  background: transparent;
+  border: none;
+  padding: 3px 3px;
+  transition: background 0.2s ease, box-shadow 0.2s ease,
+    border-bottom-color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+#workspaces button.active {
+  background: @surface_container_highest;
+  border-bottom-color: @primary;
+}
+
+#workspaces button:hover {
+  background: @surface_container_high;
+}
+
+/* -----------------------------------------------------------------------------
+* Group Networking
+* -------------------------------------------------------------------------- */
+/* #net {
+  background: @surface_container;
+  border: 1px solid @outline_variant;
+} */
+#net > *:not(:last-child) {
+  border-right: 1px solid @outline_variant;
+}
+
+#network {
+  padding: 0px 10px;
+}
+#bluetooth {
+  padding: 0px 10px;
+}
+/* -----------------------------------------------------------------------------
+* Group Resources
+* -------------------------------------------------------------------------- */
+/* #resources {
+  background: @surface_container;
+  border: 1px solid @outline_variant;
+} */
+
+#resources > *:not(:last-child) {
+  border-right: 1px solid @outline_variant;
+}
+
+#battery {
+  padding: 0px 10px;
+}
+/* #battery.critical {
+  color: @error;
+} */
+#pulseaudio {
+  padding: 0px 10px;
+}
+
+/* ------------------------------------------------ */
+#date_time,
+#workspaces,
+#tray,
+#net,
+#resources {
+  border-radius: 8px;
+  background: @surface_container;
+  border: 1px solid @outline_variant;
+}
