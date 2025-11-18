@@ -1,8 +1,8 @@
 [general]
 import = [
     # "~/.config/alacritty/themes/themes/aura.toml"
-    "~/.cache/wal/colors-alacritty.toml",
-    # "colors.toml"
+    # "~/.cache/wal/colors-alacritty.toml",
+    "colors.toml"
 ]
 # import = ["colors.toml"]
 [font]
@@ -14,8 +14,8 @@ size = 11  # Adjust size as needed
 
 [window]
 padding = { x = 10, y = 10 }  # Adjust padding as needed
-opacity = 0.80  # Transparency (0.0 = fully transparent, 1.0 = fully opaque)
-blur = true  # Enable background blur (Requires compositor like picom)
+# opacity = 1  # Transparency (0.0 = fully transparent, 1.0 = fully opaque)
+# blur = true  # Enable background blur (Requires compositor like picom)
 
 [colors]
-draw_bold_text_with_bright_colors = true
+# draw_bold_text_with_bright_colors = true

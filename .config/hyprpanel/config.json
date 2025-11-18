@@ -22,8 +22,7 @@
       "left": [
         "dashboard",
         "workspaces",
-        "windowtitle",
-        "netstat"
+        "windowtitle"
       ],
       "middle": [
         "media"
@@ -150,7 +149,7 @@
   "bar.customModules.storage.paths": [
     "/"
   ],
-  "bar.autoHide": "never",
+  "bar.autoHide": "fullscreen",
   "theme.bar.margin_top": "0em",
   "theme.bar.enableShadow": false,
   "theme.bar.margin_sides": "0em",

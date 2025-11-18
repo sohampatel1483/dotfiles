@@ -1,0 +1,139 @@
+{
+    // "layer": "top", // Set bar layer: "top", "bottom", "overlay"
+    // "position": "top", // Set bar position: "top", "bottom", "left", "right"
+    "height": 0,
+    "spacing": 4,
+    "margin": "4 5 0 5",
+    "modules-left": [
+        "group/date_time",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "tray",
+        "group/net",
+        "group/resources"
+    ],
+    "hyprland/workspaces": {
+        "on-click": "activate"
+        // "format": "{icon}",
+        // "format-icons": {
+        //     "1": "", // Firefox
+        //     "2": "", // Code
+        //     "3": "", // Terminal
+        //     "4": "", // File Manager
+        //     "5": "", // Chat
+        //     "default": ""
+        // }
+    },
+    "hyprland/window": {
+        "format": "{initialTitle}",
+        "rewrite": {
+            "firefox": "  Firefox",
+            "code": "󰨞  VS Code",
+            "kitty": "  Terminal",
+            "thunar": "  Files"
+        },
+        "separate-outputs": true
+    },
+    "group/date_time": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock#date",
+            "clock#time"
+        ]
+    },
+    "clock#date": {
+        "format": "󰸗 {:%d %b}",
+        "tooltip-format": "{:%A, %d %B %Y %I:%M:%S %p}"
+    },
+    "clock#time": {
+        "format": " {:%I:%M %p}",
+        "tooltip-format": "{:%A, %d %B %Y %I:%M:%S %p}"
+    },
+    "group/net": {
+        "orientation": "horizontal",
+        "modules": [
+            "network",
+            "bluetooth"
+        ]
+    },
+    "group/resources": {
+        "orientation": "horizontal",
+        "modules": [
+            "battery",
+            "pulseaudio"
+        ]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "max-length": 25
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰊗 {ipaddr}/{cidr}",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": " {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "nm-applet --indicator"
+    },
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": "",
+        "format-off": "",
+        "format-disabled": "",
+        "format-connected": "󰂱",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
+    }
+}
