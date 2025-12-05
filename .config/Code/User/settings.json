@@ -286,6 +286,7 @@
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
     "latex-workshop.formatting.tex-fmt.path": "/home/sohampatel/.cargo/bin/tex-fmt",
-    "workbench.colorTheme": "GitHub Dark"
+    "workbench.colorTheme": "GitHub Dark",
+    "jdk.telemetry.enabled": false
     //end vim settings
 }
