@@ -3,7 +3,7 @@
     // "position": "top", // Set bar position: "top", "bottom", "left", "right"
     "height": 0,
     "spacing": 4,
-    "margin": "4 5 0 5",
+    "margin": "0 0 0 0",
     "modules-left": [
         "group/date_time",
         "hyprland/workspaces"

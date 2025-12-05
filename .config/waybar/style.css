@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: @surface_container;
   color: @on_surface_variant;
 }
 
@@ -61,25 +61,24 @@ window#waybar {
 * Group Workspaces
 * -------------------------------------------------------------------------- */
 
-#workspaces {
-  padding: 0 3px;
-  background: @surface_container_low;
-  border-radius: 8px;
-}
+/* #workspaces {
+} */
 
 #workspaces button {
-  color: @on_surface;
+  /* color: @on_surface;
   background: transparent;
   border: none;
   padding: 3px 3px;
   transition: background 0.2s ease, box-shadow 0.2s ease,
     border-bottom-color 0.2s ease;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent; */
+  padding: 3px 5px;
+  border-radius: 50px;
+  color: @on_surface;
 }
 
 #workspaces button.active {
-  background: @surface_container_highest;
-  border-bottom-color: @primary;
+  background: @primary_container;
 }
 
 #workspaces button:hover {
@@ -127,7 +126,6 @@ window#waybar {
 
 /* ------------------------------------------------ */
 #date_time,
-#workspaces,
 #tray,
 #net,
 #resources {
