@@ -1,0 +1,35 @@
+[config]
+# [config.wallpaper]
+# command = "swww"
+# arguments = ["img", "--transition-type", "center","--transition-fps", "244","--transition-duration","1"]
+# set = false
+
+
+[templates.alacritty]
+input_path = '~/.config/matugen/templates/alacritty.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.fish]
+input_path = '~/.config/matugen/templates/fish-colors.theme'
+output_path = '~/.config/fish/themes/Matugen.theme'
+post_hook = 'yes | fish_config theme save Matugen'
+
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/shared/colors.rasi'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+# [templates.kitty]
+# input_path = './templates/kitty-colors.conf'
+# output_path = '~/.config/kitty/colors.conf'
+# post_hook = 'pkill -SIGUSR1 kitty'
