@@ -1,0 +1,13 @@
+/*
+ * Matugen-generated colors for Rofi
+ * (Based on your pywal script)
+ */
+* {
+    background:     {{colors.background.default.hex}};
+    background-alt: {{colors.background.default.hex}};
+    background-op:  #{{colors.background.default.hex_stripped}}99;
+    foreground:     {{colors.on_background.default.hex}};
+    selected:       {{colors.primary.default.hex}};
+    active:         {{colors.secondary.default.hex}};
+    urgent:         {{colors.error.default.hex}};
+}

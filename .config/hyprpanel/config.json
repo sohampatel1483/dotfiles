@@ -1,7 +1,7 @@
 {
   "bar.customModules.updates.pollingInterval": 1440000,
   "scalingPriority": "hyprland",
-  "theme.font.size": "0.9rem",
+  "theme.font.size": "0.8rem",
   "tear": false,
   "theme.font.name": "JetBrainsMono Nerd Font Propo",
   "theme.font.label": "JetBrainsMono Nerd Font Propo",
