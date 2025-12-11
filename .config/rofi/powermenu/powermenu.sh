@@ -9,52 +9,24 @@
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 theme="$SCRIPT_DIR/powermenu.rasi"
 
-# Theme Elements
-prompt="$(hostname)"
 
-# if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
-list_col='1'
-list_row='6'
-# elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
-# list_col='6'
-# list_row='1'
-# fi
+option_1="󰌾 Lock"
+option_2="󰍃 Logout"
+option_3="󰒲 Suspend"
+option_5="󰜉 Reboot"
+option_6="󰐥 Shutdown"
+yes=' Yes'
+no=' No'
 
-# Options
-layout=$(cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2)
-if [[ "$layout" == 'NO' ]]; then
-  option_1=" Lock"
-  option_2=" Logout"
-  option_3=" Suspend"
-  option_4=" Hibernate"
-  option_5=" Reboot"
-  option_6=" Shutdown"
-  yes=' Yes'
-  no=' No'
-else
-  option_1=""
-  option_2=""
-  option_3=""
-  option_4=""
-  option_5=""
-  option_6=""
-  yes=''
-  no=''
-fi
 
 # Rofi CMD
 rofi_cmd() {
-  rofi -theme-str "listview {columns: $list_col; lines: $list_row;}" \
-    -theme-str 'textbox-prompt-colon {str: "";}' \
-    -dmenu \
-    -p "$prompt" \
-    -markup-rows \
-    -theme ${theme}
+  rofi -dmenu -theme ${theme}
 }
 
 # Pass variables to rofi dmenu
 run_rofi() {
-  echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6" | rofi_cmd
+  echo -e "$option_1\n$option_2\n$option_3\n$option_5\n$option_6" | rofi_cmd
 }
 
 # Confirmation CMD
@@ -92,14 +64,12 @@ run_cmd() {
   elif [[ "$1" == '--opt2' ]]; then
     loginctl terminate-user $USER
   elif [[ "$1" == '--opt3' ]]; then
-    # systemctl suspend
-    (
-      sleep 0.5
-      systemctl suspend
-    ) &
-    loginctl lock-session
-  elif [[ "$1" == '--opt4' ]]; then
-    confirm_run 'systemctl hibernate'
+    systemctl suspend
+    # (
+    #   sleep 0.5
+    #   systemctl suspend
+    # ) &
+    # loginctl lock-session
   elif [[ "$1" == '--opt5' ]]; then
     confirm_run 'systemctl reboot'
   elif [[ "$1" == '--opt6' ]]; then
@@ -118,9 +88,6 @@ $option_2)
   ;;
 $option_3)
   run_cmd --opt3
-  ;;
-$option_4)
-  run_cmd --opt4
   ;;
 $option_5)
   run_cmd --opt5

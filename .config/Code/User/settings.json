@@ -287,6 +287,7 @@
     },
     "latex-workshop.formatting.tex-fmt.path": "/home/sohampatel/.cargo/bin/tex-fmt",
     "workbench.colorTheme": "GitHub Dark",
-    "jdk.telemetry.enabled": false
+    "jdk.telemetry.enabled": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
     //end vim settings
 }

@@ -1,11 +1,9 @@
-
-
-
-
 .config/Code/*
+!.config/Code/User/keybindings.json
+!.config/Code/User/settings.json
+!.config/Code/User/snippets
 
-!.config/Code/User/
-
-.config/Code/User/workspaceStorage/
-.config/Code/User/globalStorage/
-.config/Code/User/History/
+.local/bin/*
+!.local/bin/toggle_wifi
+!.local/bin/wall_select
+!.local/bin/waybar_reload
