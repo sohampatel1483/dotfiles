@@ -14,16 +14,16 @@ USE_ICON=NO
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    southeast; 
+    anchor:                      southeast;
+    x-offset:                    -5px;
+    y-offset:                    -5px;
     fullscreen:                  false;
-    width:                       300px;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    width:                       140px;
     margin:                      0px;
     padding:                     0px;
     border:                      1px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background-op;
@@ -34,7 +34,7 @@ mainbox {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     20px;
+    padding:                     8px;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
 }
@@ -80,9 +80,9 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    padding:                     10px;
+    padding:                     8px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               5px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;

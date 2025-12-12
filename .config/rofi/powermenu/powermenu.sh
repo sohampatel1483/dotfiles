@@ -9,15 +9,13 @@
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 theme="$SCRIPT_DIR/powermenu.rasi"
 
-
-option_1="󰌾 Lock"
-option_2="󰍃 Logout"
-option_3="󰒲 Suspend"
-option_5="󰜉 Reboot"
-option_6="󰐥 Shutdown"
+option_1="󰌾  Lock"
+option_2="󰍃  Logout"
+option_3="󰒲  Suspend"
+option_5="󰜉  Reboot"
+option_6="󰐥  Shutdown"
 yes=' Yes'
 no=' No'
-
 
 # Rofi CMD
 rofi_cmd() {
