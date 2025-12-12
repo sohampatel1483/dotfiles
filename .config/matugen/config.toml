@@ -32,6 +32,11 @@ post_hook = 'pkill -SIGUSR2 waybar'
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/wlogout/colors.css'
+
+[templates.swayosd]
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/swayosd/colors.css'
+post_hook = 'bash -c "if pgrep -x swayosd-server >/dev/null 2>&1;then pkill swayosd-server;setsid -f swayosd-server >/dev/null 2>&1;fi"'
 # [templates.kitty]
 # input_path = './templates/kitty-colors.conf'
 # output_path = '~/.config/kitty/colors.conf'
