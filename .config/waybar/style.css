@@ -63,7 +63,11 @@ window#waybar {
 }
 
 #battery.charging {
-  color: @primary;   /* or any color you want */
+  color: @primary;  
+}
+
+#battery.warning {
+  color: @error;
 }
 #tray {
   margin-right: 16px;

@@ -265,7 +265,7 @@
     },
     "workbench.sideBar.location": "right",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": true,
         "markdown": false,
         "scminput": false,
@@ -288,6 +288,15 @@
     "latex-workshop.formatting.tex-fmt.path": "/home/sohampatel/.cargo/bin/tex-fmt",
     "workbench.colorTheme": "GitHub Dark",
     "jdk.telemetry.enabled": false,
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "apps/liveipo-app/src/navigation/TopNavigation.tsx"
+    ]
     //end vim settings
 }

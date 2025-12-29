@@ -1,0 +1,46 @@
+# Don't edit this file, as it will be written by the web-config tool (`fish_config`).
+# To customize your theme, delete this file and see
+#     help interactive#syntax-highlighting
+# or
+#     man fish-interactive | less +/^SYNTAX.HIGHLIGHTING
+# for appropriate commands to add to ~/.config/fish/config.fish instead.
+
+set --global fish_color_autosuggestion e5e1e9
+set --global fish_color_cancel e5e1e9
+set --global fish_color_command c5c0ff
+set --global fish_color_comment e5e1e9
+set --global fish_color_cwd e5e1e9
+set --global fish_color_cwd_root 
+set --global fish_color_end c8c4dc
+set --global fish_color_error ffb4ab
+set --global fish_color_escape 2f1122
+set --global fish_color_gray 3a383f
+set --global fish_color_history_current 
+set --global fish_color_host c8c4dc
+set --global fish_color_host_remote c8c4dc
+set --global fish_color_keyword ffd8e9
+set --global fish_color_match --background=brblue
+set --global fish_color_normal e5e1e9
+set --global fish_color_operator ffd8e9
+set --global fish_color_option c5c0ff
+set --global fish_color_param ebb8d0
+set --global fish_color_quote e5e1e9
+set --global fish_color_redirection ebb8d0
+set --global fish_color_search_match --background=928f99
+set --global fish_color_selection --background=928f99
+set --global fish_color_status e5e1e9
+set --global fish_color_user c5c0ff
+set --global fish_color_valid_path 
+set --global fish_pager_color_background 
+set --global fish_pager_color_completion c5c0ff
+set --global fish_pager_color_description c5c0ff
+set --global fish_pager_color_prefix ebb8d0
+set --global fish_pager_color_progress c5c0ff
+set --global fish_pager_color_secondary_background 
+set --global fish_pager_color_secondary_completion 
+set --global fish_pager_color_secondary_description 
+set --global fish_pager_color_secondary_prefix 
+set --global fish_pager_color_selected_background 
+set --global fish_pager_color_selected_completion 
+set --global fish_pager_color_selected_description 
+set --global fish_pager_color_selected_prefix 

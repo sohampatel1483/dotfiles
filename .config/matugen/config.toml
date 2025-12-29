@@ -37,6 +37,21 @@ output_path = '~/.config/wlogout/colors.css'
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/swayosd/colors.css'
 post_hook = 'bash -c "if pgrep -x swayosd-server >/dev/null 2>&1;then pkill swayosd-server;setsid -f swayosd-server >/dev/null 2>&1;fi"'
+
+[templates.dunst]
+input_path = '~/.config/matugen/templates/dunstrc-colors'
+output_path = '~/.config/dunst/dunstrc'
+post_hook = 'dunstctl reload'
+
+[templates.tofi]
+input_path = '~/.config/matugen/templates/tofi-colors'
+output_path = '~/.config/tofi/colors'
+
+
+[templates.vicinae]
+input_path = '~/.config/matugen/templates/vicinae.toml'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
+post_hook = 'vicinae theme set matugen'
 # [templates.kitty]
 # input_path = './templates/kitty-colors.conf'
 # output_path = '~/.config/kitty/colors.conf'
