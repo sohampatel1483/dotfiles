@@ -3,11 +3,11 @@
  * (Based on your pywal script)
  */
 * {
-    background:     #101418;
-    background-alt: #101418;
-    background-op:  #10141899;
-    foreground:     #e0e2e8;
-    selected:       #99ccfa;
-    active:         #b8c8da;
+    background:     #1a1110;
+    background-alt: #1a1110;
+    background-op:  #1a111099;
+    foreground:     #f1dedc;
+    selected:       #ffb4ac;
+    active:         #e7bdb8;
     urgent:         #ffb4ab;
 }

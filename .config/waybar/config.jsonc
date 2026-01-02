@@ -78,7 +78,7 @@
         "interval": 3,
         "spacing": 1,
         "on-click": "nmrs",
-        "on-click-right": "toggle_wifi",
+        "on-click-right": "~/.config/waybar/scripts/toggle_wifi",
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -115,19 +115,20 @@
         "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
         "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
         "interval": 5,
-        // "on-click": "omarchy-menu power",
         "states": {
             "warning": 20,
             "critical": 10
         }
     },
     "bluetooth": {
-        "format": "",
+        "format-on": "",
+        "format-off":"󰂲",
         "format-disabled": "󰂲",
         "format-connected": "󰂱",
         "format-no-controller": "",
         "tooltip-format": "Devices connected: {num_connections}",
-        "on-click": "blueman-manager"
+        "on-click": "blueman-manager",
+        "on-click-right": "~/.config/waybar/scripts/toggle_bluetooth"
     },
     "pulseaudio": {
         "format": "{icon}  {volume}%",

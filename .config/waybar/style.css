@@ -63,7 +63,7 @@ window#waybar {
 }
 
 #battery.charging {
-  color: @primary;  
+  color: @tertiary;  
 }
 
 #battery.warning {
