@@ -297,6 +297,7 @@
         "vscode",
         "vscode-insiders",
         "apps/liveipo-app/src/navigation/TopNavigation.tsx"
-    ]
+    ],
+    "terminal.integrated.suggest.enabled": false
     //end vim settings
 }

@@ -20,6 +20,7 @@
         "battery"
     ],
     "hyprland/workspaces": {
+        "all-outputs": false,
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
@@ -55,8 +56,8 @@
         "format": "󰍛",
     },
     "clock": {
-        "format": "{:L%A %I:%M}",
-        "format-alt": "{:L%d %B W%V %Y}",
+        "format": "{:L%d %B %I:%M}",
+        "format-alt": "{:L%A %d %B W%V %Y}",
         "tooltip": false,
     },
     "network": {
