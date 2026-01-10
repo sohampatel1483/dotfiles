@@ -38,6 +38,11 @@ input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/swayosd/colors.css'
 post_hook = 'bash -c "if pgrep -x swayosd-server >/dev/null 2>&1;then pkill swayosd-server;setsid -f swayosd-server >/dev/null 2>&1;fi"'
 
+[templates.swaync]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/swaync/colors.css"
+post_hook = 'bash -c "if pgrep -x swaync >/dev/null 2>&1;then pkill swaync;setsid -f swaync >/dev/null 2>&1;fi"'
+
 [templates.dunst]
 input_path = '~/.config/matugen/templates/dunstrc-colors'
 output_path = '~/.config/dunst/dunstrc'

@@ -32,4 +32,4 @@ SETUVAR fish_pager_color_description:a2c9fe
 SETUVAR fish_pager_color_prefix:d8bde4
 SETUVAR fish_pager_color_progress:a2c9fe
 SETUVAR fish_pager_color_selected_background:\x1d
-SETUVAR fish_user_paths:/home/soham/\x2elocal/bin
+SETUVAR fish_user_paths:/home/soham/\x2ecargo/bin\x1e/home/soham/\x2elocal/bin
