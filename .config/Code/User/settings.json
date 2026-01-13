@@ -299,6 +299,7 @@
         "vscode-insiders",
         "apps/liveipo-app/src/navigation/TopNavigation.tsx"
     ],
-    "terminal.integrated.suggest.enabled": false
+    "terminal.integrated.suggest.enabled": false,
+    "chat.viewSessions.orientation": "stacked"
     //end vim settings
 }

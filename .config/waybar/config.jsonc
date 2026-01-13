@@ -9,8 +9,7 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock",
-        "custom/screenrecording-indicator"
+        "clock"
     ],
     "modules-right": [
         "group/tray-expander",
@@ -35,7 +34,6 @@
             "8": "8",
             "9": "9",
             "10": "0",
-            // "active": "󱓻"
         },
         // "persistent-workspaces": {
             // "1": [],
