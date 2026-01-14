@@ -77,7 +77,7 @@
         "interval": 3,
         "spacing": 1,
         "on-click": "nmrs",
-        "on-click-right": "~/.config/waybar/scripts/toggle_wifi",
+        "on-click-right": "~/.config/hypr/scripts/toggle_wifi.sh",
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -127,7 +127,7 @@
         "format-no-controller": "",
         "tooltip-format": "Devices connected: {num_connections}",
         "on-click": "blueman-manager",
-        "on-click-right": "~/.config/waybar/scripts/toggle_bluetooth"
+        "on-click-right": "~/.config/hypr/scripts/toggle_bluetooth.sh"
     },
     "pulseaudio": {
         "format": "{icon}  {volume}%",
