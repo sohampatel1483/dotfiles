@@ -300,6 +300,7 @@
         "apps/liveipo-app/src/navigation/TopNavigation.tsx"
     ],
     "terminal.integrated.suggest.enabled": false,
-    "chat.viewSessions.orientation": "stacked"
+    "chat.viewSessions.orientation": "stacked",
+    "editor.unicodeHighlight.invisibleCharacters": false
     //end vim settings
 }
